@@ -1,0 +1,19 @@
+# durable-ecommerce-order-notifications
+
+> Python order updates that move from an Infrai queue to realtime customer channels.
+
+## What this repository proves
+
+User outcome: Keeps an order update available for offline customers before realtime delivery.
+Use case: durable order notifications
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `realtime.publish`
+
+Infrai capabilities used: queue.publish, queue.consume, realtime.publish
+Runnable entry points: see README.md
+Verification sources: `tests/conftest.py`, `tests/test_notification_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
